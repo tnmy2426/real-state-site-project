@@ -157,3 +157,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 # Large File upload permission
 FILE_UPLOAD_PERMISSIONS = 0o644
 
+
+# CUSTOM USER MODEL
+AUTH_USER_MODEL = 'accounts.UserAccount'
