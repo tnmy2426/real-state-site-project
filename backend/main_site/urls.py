@@ -13,6 +13,7 @@ urlpatterns = [
     path('api/accounts/', include('accounts.urls')),
     path('api/realtors/', include('businessmans.urls')),
     path('api/listings/', include('listings.urls')),
+    path('api/contact/', include('contact.urls')),
 
     # For rest_framework
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
