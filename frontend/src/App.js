@@ -9,21 +9,26 @@ import SignUp from './containers/SignUp';
 import Signin from './containers/Signin';
 import NotFound from './components/NotFound';
 
+import { Provider } from 'react-redux';
+import store from './store';
+
 const App = () => {
   return (
-    <Router>
-      <Layout>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/listings' component={Listings} />
-          <Route exact path='/listings/:id' component={ListingDetail} />
-          <Route exact path='/signup' component={SignUp} />
-          <Route exact path='/signin' component={Signin} />
-          <Route component={NotFound} />
-        </Switch>
-      </Layout>
-    </Router>
+    <Provider store={store} >
+      <Router>
+        <Layout>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/listings' component={Listings} />
+            <Route exact path='/listings/:id' component={ListingDetail} />
+            <Route exact path='/signup' component={SignUp} />
+            <Route exact path='/signin' component={Signin} />
+            <Route component={NotFound} />
+          </Switch>
+        </Layout>
+      </Router>
+    </Provider>
 
   )
 };
