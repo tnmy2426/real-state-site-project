@@ -12,7 +12,7 @@ export default function (state = initialState, action) {
 
     switch(type){
         case SIGNIN_SUCCESS:
-            localStorage.setItem('token', payload.access)
+            localStorage.setItem('token', payload.access);
             return{
                 ...state,
                 isAuthenticated: true,

@@ -18,7 +18,7 @@ export const signin = (email, password) => async dispatch =>{
             payload: res.data
         });
 
-        dispatch(setAlert('Authenticated successfully!', 'success'));
+        dispatch(setAlert('Authenticating successfully!', 'success'));
     } catch (err){
         dispatch({
             type: SIGNIN_FAIL
