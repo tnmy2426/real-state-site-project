@@ -163,7 +163,85 @@ html {
 }
 
 
-/* HOME PAGE Design */
+/*-------------------------------------------- HOME PAGE Design ------------------------------------------*/
+.home_page{
+    width: 60%;
+    float: right;
+    margin-top: 2rem;
+}
+.lisiting_section{
+    margin-top: 2rem;
+}
+.pagination_section{
+    margin-top: 5rem;
+}
+.side_section{
+    float: left;
+    width: 40%;
+    height: 100vh;
+    background-color: #e8e8e8;
+}
+
+.lisitings_form{
+    margin: 5rem 5rem;
+    
+}
+
+.lisitings_form_section{
+    font-size: 2rem;
+    color: #222831;
+}
+
+.lisitings_form_label{
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.lisitings_form_select{
+    padding: .5rem 1rem;
+    color: #30475e;
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.lisitings_form_input{
+    width: 20rem;
+    margin-left: 1rem;
+}
+/* .lisitings_form_checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.lisitings_form_loader{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+
+}
+
+.lisitings_form_btn{
+    width: 100%;
+    background-color: #30475E !important;
+    font-size: 2.5rem !important;
+    margin-left: 5rem;
+    color: #e8e8e8 !important;
+    box-shadow: .2rem .4rem .5rem rgba(0, 0, 0, 0.4);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.lisitings_form_btn:hover{
+    color: #f05454 !important;
+    background: #222831 !important;
+}
+
+
 /* About PAGE Design */
 /* Contact PAGE Design */
 /* Listings PAGE Design */
